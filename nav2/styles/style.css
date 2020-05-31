@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-header{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px; 
+     
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.list li{
+    margin: 0 auto;
+}
+.logo{
+    margin-left:0px ;
+}
+.registration{
+    margin-right:0px ;
+}
+.navigation-item{
+    display: inline-block;
+}
+.navigation-item a{
+    text-transform: capitalize;
+    color: rgb(224, 72, 34)
+}
+.navigation-item a:hover{
+    color: rgb(177, 2, 2);
+    text-decoration: underline;
+}
+.registration button{
+    padding: 8px 12px;
+    outline: none;
+    border: 2px solid orangered;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn-registration{
+    color: orangered;
+    background-color: transparent;
+    margin-right: 5px;
+}
+.btn-login{
+    color: #fff;
+    background-color: orangered;
+    margin-left: 5px;
+}
+.btn-registration:hover, .btn-login:hover{
+    box-shadow: 0 0 1px 1px rgba(114, 24, 1, 0.4)
+}
+@media screen and (max-width:768px){
+    .logo{
+      flex-basis: 100%;
+      margin-left: auto !important;   
+    }
+  
+}
+@media screen and (max-width:600px){
+    .navigation-item:nth-child(2){
+        margin-left: 0 !important;
+    }
+    .navigation-item:nth-child(5){
+        margin-right: 0 !important;
+    }
+    .navigation-item a{
+        font-size: 15px;
+    }
+    .registration{
+        
+        margin: 20px auto !important;   
+    } 
+}
